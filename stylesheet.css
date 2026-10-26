@@ -1,0 +1,87 @@
+header{
+    display: flex;
+    align-items: center;
+    height: 180px;
+    padding: 0 30px;         
+
+    background: linear-gradient(
+            #E3350D 0%, #E3350D 48%,
+            black 48%, black 52%,
+            white 52%, white 100%);
+
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+            -2.3px -2.3px 0 #000,
+            2.3px -2.3px 0 #000,
+            -2.3px  2.3px 0 #000,
+            2.3px  2.3px 0 #000;
+    text-decoration: none;
+    border-block-style: groove;
+}
+
+#nav1 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.forside button{
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 1rem;
+margin-top: 200px;
+    color: white;
+    background-color: #E3350D;
+;
+}
+
+.pokemon button {
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 1rem;
+    margin-top: 200px;
+    color: white;
+    background-color: #E3350D;
+}
+
+.trainer button{
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 1rem;
+    margin-top: 200px;
+    color: white;
+    background-color: #E3350D;
+}
+
+.dash button{
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 1rem;
+    margin-top: 200px;
+    color: white;
+    background-color: #E3350D;
+}
+
+#nav2 button{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Montserrat;
+    background-color: #E3350D;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
