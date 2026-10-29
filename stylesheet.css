@@ -1,16 +1,16 @@
 header{
+    position: relative;
     display: flex;
     align-items: center;
-    height: 180px;
-    padding: 0 30px;         
-
+    height: 145px;
+    padding: 0 30px;
     background: linear-gradient(
             #E3350D 0%, #E3350D 48%,
             black 48%, black 52%,
             white 52%, white 100%);
 
     font-family: Arial, sans-serif;
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     text-shadow:
@@ -26,63 +26,88 @@ header{
     display: flex;
     flex-direction: column;
     place-items: center;
-}
 
-.forside button{
-    padding: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: Montserrat;
-    border-radius: 1rem;
-margin-top: 200px;
-    color: white;
-    background-color: #E3350D;
-;
 }
-
-.pokemon button {
+#nav1 button{
     padding: 30px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     font-family: Montserrat;
     border-radius: 1rem;
     margin-top: 200px;
     color: white;
     background-color: #E3350D;
+    border: 1px solid #E3350D;
+    box-shadow: 2px 5.8px 0px #8d2103;
+    transition: all 0.2s ease;
 }
 
-.trainer button{
-    padding: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: Montserrat;
-    border-radius: 1rem;
-    margin-top: 200px;
+#nav1 button:hover {
     color: white;
-    background-color: #E3350D;
+    background-color: #ff3200;
+    box-shadow: 2px 11px 1.2px #d11d01;
+    transform: translate(0px, -5px);
 }
 
-.dash button{
-    padding: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: Montserrat;
-    border-radius: 1rem;
-    margin-top: 200px;
-    color: white;
-    background-color: #E3350D;
+#nav2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 8px;
 }
 
 #nav2 button{
     padding: 10px;
-    font-size: 15px;
-    font-family: Montserrat;
-    background-color: #E3350D;
-    color: white;
+    font-size: 20px;
     font-weight: bold;
-
+    font-family: Montserrat;
+    border-radius: 0.3rem;
+    margin-left: 80px;
+    color: white;
+    background-color: #E3350D;
+    border: 1px solid #E3350D;
+    box-shadow: 2px 4px 0px #8d2103;
+    transition: all 0.2s ease;
 }
 
+#nav2 button:hover{
+    color: white;
+    background-color: #ff3200;
+    box-shadow: 2px 7px 2.5px #d11d01;
+    transform: translate(0px, -5px);
+}
 
-hej
+#searchInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 600px;
+    background-color: white;
+    padding: 12px;
+    width: 250px;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 16px;
+}
+#searchResults {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    z-index: 1000;
+}
 
+#searchResults p {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
