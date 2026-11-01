@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
-    <title>Tværfaglig</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Pokémon Dashboard</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
+    <script src="frontend.js" defer></script>
 </head>
-<body>
+<body class="dashboard-page" style="
+    background-image: url('pokemon baggrund.PNG');
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;"
+      class="img">
 <header>
     <h1>Pokemon Pokedex</h1>
     <input type="text" id="searchInput" placeholder="Search for...">
     <div id="searchResults"></div>
 </header>
+
 <main>
     <nav>
         <div id="nav2">
@@ -29,7 +42,59 @@
             </a>
         </div>
     </nav>
+
+    <div class="dashboard-content">
+        <section>
+            <h2>De 10 hurtigste Pokémon</h2>
+
+            <p id="speed-status" role="status">Henter data…</p>
+
+            <div class="chart">
+                <canvas id="speed-chart"></canvas>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hvordan er Pokémon fordelt på typer?</h2>
+            <p>Antal Pokémon fordelt på deres primære type.</p>
+
+            <p id="type-status" role="status">Henter data…</p>
+
+            <div class="chart">
+                <canvas id="type-chart"></canvas>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hvilken type har højest gennemsnitlig attack?</h2>
+            <p>Typerne er sorteret fra højeste til laveste gennemsnit.</p>
+
+            <p id="attack-status" role="status">Henter data…</p>
+
+            <div class="chart">
+                <canvas id="attack-chart"></canvas>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hvilke trainers har flest Pokémon?</h2>
+
+            <p id="trainer-status" role="status">Henter data…</p>
+
+            <div class="scroll">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Trainer</th>
+                        <th>Antal Pokémon</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="trainer-stats"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
 </main>
-<script src="frontend.js"></script>
 </body>
 </html>

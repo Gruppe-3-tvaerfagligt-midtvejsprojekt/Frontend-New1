@@ -6,7 +6,15 @@
     <title>Tværfaglig</title>
 
 </head>
-<body>
+<body style="
+    background-image: url('pokemon baggrund.PNG');
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;"
+      class="img">
 <header>
     <h1>Pokemon Pokedex</h1>
     <input type="text" id="searchInput" placeholder="Search for...">
@@ -29,6 +37,39 @@
             </a>
         </div>
     </nav>
+    <section class="trainerPage">
+    <h2>Trainer</h2>
+    <div id="trainerList"></div>
+        <hr>
+        <h3>Create a New Trainer</h3>
+
+        <form id="createTrainerForm">
+            <input type="text" id="trainerNameInput" placeholder="Trainer name" required>
+            <input type="text" id="hometownInput" placeholder="Hometown" required>
+            <input type="number" id="ageInput" placeholder="Age" min="1" required>
+
+            <button type="submit">Create Trainer</button>
+        </form>
+        <p id="trainerMessage"></p>
+
+        <h3>Add Pokémon to Trainer</h3>
+
+        <form id="addPokemonForm">
+            <select id="trainerSelect" required>
+                <option value="">Select a trainer</option>
+            </select>
+
+            <select id="pokemonSelect" required>
+                <option value="">Select a Pokémon</option>
+            </select>
+
+            <button type="submit">Add Pokémon</button>
+        </form>
+
+        <p id="pokemonMessage"></p>
+    </section>
+
+
 </main>
 <script src="frontend.js"></script>
 </body>

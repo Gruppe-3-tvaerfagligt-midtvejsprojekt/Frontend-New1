@@ -1,3 +1,6 @@
+html{
+    font-family: Montserrat;
+}
 header{
     position: relative;
     display: flex;
@@ -34,7 +37,8 @@ header{
     font-weight: bold;
     font-family: Montserrat;
     border-radius: 1rem;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     color: white;
     background-color: #E3350D;
     border: 1px solid #E3350D;
@@ -107,7 +111,251 @@ header{
     font-size: 16px;
     font-weight: normal;
     color: black;
+    text-shadow: none;
+    -webkit-text-stroke: 0;
+    position: static;
     margin: 0;
+    padding: 8px;
+    transform: none;
+}
+
+.trainerPage {
+    font-size: 25px;
+    box-sizing: border-box;
+    width: calc(100% - 48px);
+    max-width: 1202px;
+    margin: 36px auto;
+    padding: 28px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(30, 41, 59, 0.05);
+    font-family: Montserrat;
+}
+
+.trainerPage h2, h3, p{
+    text-align: center;
+
+}
+
+#createTrainerForm input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 100px;
+    border: 1px black solid;
+    width: 1110px;
+}
+
+#createTrainerForm button{
     padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 0.3rem;
+    margin-top: 20px;
+    color: white;
+    background-color: #E3350D;
+    border: 1px solid #E3350D;
+    box-shadow: 2px 4px 0px #8d2103;
+    transition: all 0.2s ease;
+    margin-bottom: 20px;
+    margin-left: 980px;
+}
+
+#createTrainerForm button:hover{
+    color: white;
+    background-color: #ff3200;
+    box-shadow: 2px 7px 2.5px #d11d01;
+    transform: translate(0px, -5px);
+}
+
+hr{
+    margin-top: 100px;
+    margin-bottom: 50px
+}
+
+#addPokemonForm select{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 100px;
+    border: 1px black solid;
+    width: 1140px;
+}
+
+
+
+#addPokemonForm button{
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 0.3rem;
+    margin-top: 20px;
+    color: white;
+    background-color: #E3350D;
+    border: 1px solid #E3350D;
+    box-shadow: 2px 4px 0px #8d2103;
+    transition: all 0.2s ease;
+    margin-left: 980px;
+}
+
+#addPokemonForm button:hover{
+    color: white;
+    background-color: #ff3200;
+    box-shadow: 2px 7px 2.5px #d11d01;
+    transform: translate(0px, -5px);
+}
+
+#pokemonSection{
+    font-size: 25px;
+    box-sizing: border-box;
+    width: calc(100% - 48px);
+    max-width: 1202px;
+    margin: 36px auto;
+    padding: 100px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(30, 41, 59, 0.05);
+    font-family: Montserrat;
+}
+#pokemonSection span{
+    font-weight: bold;
+    justify-content: center;
+}
+
+#showAllBtn{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 0.3rem;
+    color: white;
+    background-color: #E3350D;
+    border: 1px solid #E3350D;
+    box-shadow: 2px 4px 0px #8d2103;
+    transition: all 0.2s ease;
+}
+
+#showAllBtn:hover{
+    color: white;
+    background-color: #ff3200;
+    box-shadow: 2px 7px 2.5px #d11d01;
+    transform: translate(0px, -5px);
+}
+
+.dashboard-page main > :not(nav)  {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+.dashboard-page main > h1 {
+    margin: 0 0 28px;
+}
+
+.dashboard-page section {
+    min-width: 0;
+    margin-bottom: 28px;
+    padding: 28px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(30, 41, 59, 0.05);
+}
+
+.dashboard-page h2 {
+    margin: 0 0 10px;
+    color: #1e293b;
+    font-size: clamp(20px, 2.5vw, 26px);
+    font-weight: 700;
+    line-height: 1.35;
+    text-shadow: none;
+    -webkit-text-stroke: 0;
+}
+
+.dashboard-page section p {
+    margin: 0 0 20px;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.dashboard-page section p:empty {
+    display: none;
+}
+
+.dashboard-page .chart {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.dashboard-page .scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.dashboard-page table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.dashboard-page th {
+    padding: 16px 20px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 700;
     text-align: left;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.dashboard-page td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #edf2f7;
+    text-align: left;
+}
+
+.dashboard-page tbody tr:nth-child(even) {
+    background: #fafbfd;
+}
+
+.dashboard-page tbody tr:hover {
+    background: #fff3ed;
+}
+
+.dashboard-page tbody tr:first-child td {
+    color: #bd340d;
+    font-weight: 700;
+}
+
+.dashboard-page th:last-child,
+.dashboard-page td:last-child {
+    text-align: right;
+}
+
+.dashboard-page .error {
+    color: #b91c1c;
+}
+
+.dashboard-page a:focus-visible {
+    outline: 3px solid #1e293b;
+    outline-offset: 4px;
+}
+
+.img{
+    transition: all 0.2s ease;
 }
